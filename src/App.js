@@ -36,7 +36,6 @@ class App extends React.Component{
           })
         });
 
-        console.log(this.state)
       }
       else{
         this.setState({currentUser: userAuth})
@@ -52,7 +51,6 @@ class App extends React.Component{
     return (
       <div>
         <Header currentUser={this.state.currentUser} />
-        {console.log(this.state)}
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/shop" component={ShopPage} />
